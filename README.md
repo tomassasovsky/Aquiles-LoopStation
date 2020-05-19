@@ -1,10 +1,10 @@
 # LoopPedal
-This is my go at building a replica of Ed Sheeran's Chewie Monsta 2
-This pedal will have:
-  -2 Modes (Play and Rec)
-  -11 different pedals:
-     -Rec/Play button
-     -Stop button
+This is my go at building a replica of Ed Sheeran's Chewie Monsta 2  
+This pedal will have:  
+  -2 Modes (Play and Rec)  
+  -11 different pedals:  
+     -Rec/Play button  
+     -Stop button  
      -Undo button
      -Mode button
      -4 Track buttons (for 4 individual tracks)
