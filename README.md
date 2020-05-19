@@ -17,7 +17,7 @@ This pedal will have:
 
 The Arduino bootloader can be changed to be recognized by the computer as a USB MIDI device, or the programs LoopMIDI and Hairless MIDI SERIAL can be used to bridge the MIDI communication between the Arduino and the computer itself.
 
-# Getting Started
+### Getting Started
 eda
-## Prerequisites
+#### Prerequisites
 awdaw
