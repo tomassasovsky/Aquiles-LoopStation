@@ -1,0 +1,7 @@
+!focuslock
+
+for *
+	muteOff
+	set muteMode Pause
+	muteOn
+next
