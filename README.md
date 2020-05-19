@@ -1,4 +1,4 @@
-###Loop Pedal - Chewie Monsta 2  
+### Loop Pedal - Chewie Monsta 2  
 This is my go at building a replica of Ed Sheeran's Chewie Monsta 2  
 This pedal will have:  
   -2 Modes (Play and Rec)  
