@@ -14,5 +14,6 @@ This pedal will have:
  3. An Arduino Uno, to communicate to the program Möbius  
  4. 5 LEDs, one to display the current mode of the pedal (either Play or Rec) and one for each track, to display its state  
  5. A display  
+
 The Arduino bootloader can be changed to be recognized by the computer as a USB MIDI device, or the programs LoopMIDI and Hairless MIDI SERIAL can be used to bridge the MIDI communication between the Arduino and the computer itself.
 
