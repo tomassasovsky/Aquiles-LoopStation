@@ -1,0 +1,11 @@
+for *
+	if mode = record
+		Play
+		set input 0
+	elseif mode = overdub
+		Play
+		set input 0
+	endif
+next
+
+NextTrack

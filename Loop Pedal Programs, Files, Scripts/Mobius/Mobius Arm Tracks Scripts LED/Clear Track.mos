@@ -1,0 +1,9 @@
+trackNumber
+
+if mode = play
+	Variable activeTrack trackNumber
+	set input 0
+	Clear	
+	Mute
+	message Track $trackNumber - Cleared
+endif

@@ -1,0 +1,24 @@
+Track 1
+
+if mode = play
+	Mute
+	message Muted - Track 1
+else if mode = mute
+	Variable trackStillPlaying
+	for *
+	   if mode == play
+		  set trackStillPlaying true
+	   endif
+	next
+	if trackStillPlaying
+		message Playing - Track 1
+		Play
+		for *
+			if focuslock
+				focuslock
+			endif
+		next
+	else
+		focuslock
+	endif
+endif

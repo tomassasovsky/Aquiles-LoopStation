@@ -1,0 +1,5 @@
+MuteOn
+
+if !inMute
+	MuteOn
+endif

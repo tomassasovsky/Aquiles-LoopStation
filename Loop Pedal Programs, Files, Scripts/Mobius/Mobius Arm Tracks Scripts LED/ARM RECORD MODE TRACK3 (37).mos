@@ -1,0 +1,39 @@
+!focuslock
+
+Track3
+
+if mode == reset
+	Variable activeTrack trackNumber
+	set input 127
+	for *
+		Record
+	next
+	message Recording - Track 3
+
+else if mode = record
+	Variable activeTrack trackNumber
+	Play
+	set input 0
+	for *
+		if trackNumber != activeTrack
+			Mute
+		endif
+		Record
+	next
+	message Playing - Track 3
+
+else if mode = overdub
+	set input 0
+	Play
+	message Playing - Track 3
+
+else if mode = play
+	set input 127
+	Overdub
+	message Overdubbing - Track 3
+
+else if mode = mute
+	set input 127
+	Overdub
+	message Overdubbing - Track 3
+endif

@@ -1,0 +1,8 @@
+for *
+	Reset
+	if focuslock
+		focuslock
+	endif
+next
+Track 1
+MidiOut noteon 1 19 127
