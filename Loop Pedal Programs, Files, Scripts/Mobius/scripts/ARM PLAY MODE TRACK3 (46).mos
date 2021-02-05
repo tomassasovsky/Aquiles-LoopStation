@@ -1,0 +1,25 @@
+!name Play - Track 3 [46]
+Track 3
+
+if mode = play
+	Mute
+	message Muted - Track 3
+else if mode = mute
+	Variable trackStillPlaying
+	for *
+	   if mode == play
+		  set trackStillPlaying true
+	   endif
+	next
+	if trackStillPlaying
+		message Playing - Track 3
+		Play
+		for *
+			if focuslock
+				focuslock
+			endif
+		next
+	else
+		focuslock
+	endif
+endif

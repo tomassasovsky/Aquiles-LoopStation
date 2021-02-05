@@ -1,0 +1,16 @@
+!name Clear Track [30]
+trackNumber
+
+if mode = overdub
+	Play
+	Clear
+	Mute
+	set input 0
+endif
+
+if mode = play
+	set input 0
+	Clear
+	Mute
+	message Track $trackNumber - Cleared
+endif

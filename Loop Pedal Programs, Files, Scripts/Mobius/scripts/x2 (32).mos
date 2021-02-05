@@ -1,0 +1,7 @@
+!name X2 [32]
+
+if cycleCount != 256
+	for *
+		InstantMultiply 2
+	next
+endif

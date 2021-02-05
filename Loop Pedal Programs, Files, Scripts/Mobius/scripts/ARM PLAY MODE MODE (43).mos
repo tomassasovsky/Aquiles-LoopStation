@@ -1,0 +1,9 @@
+!name Play - Mode [43]
+for *
+   if FocusLock = true
+       FocusLock 
+   endif
+   set input 127
+next
+
+message Record Mode

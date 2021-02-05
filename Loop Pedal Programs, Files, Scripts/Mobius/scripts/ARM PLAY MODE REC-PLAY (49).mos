@@ -1,0 +1,38 @@
+##!focuslock
+message Start Point
+
+Variable trackStillPlaying
+Variable tracklocked
+
+for *
+   if mode == play
+      set trackStillPlaying true
+   endif
+next
+
+if trackStillPlaying
+	message Playing
+	for *
+			Play
+	next
+else 
+	message Start Point
+		for *
+			if focuslock
+				set tracklocked true
+			endif
+		next
+	if tracklocked
+		for *
+			if focuslock
+				Play
+			endif
+			Move LoopFrames 0
+		next
+	elseif !tracklocked
+		for *
+			Play
+			Move LoopFrames 0
+		next
+	endif
+endif

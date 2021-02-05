@@ -1,0 +1,7 @@
+!name /2 [33]
+
+if cycleCount != 1
+	for *
+		Divide 2
+	next
+endif

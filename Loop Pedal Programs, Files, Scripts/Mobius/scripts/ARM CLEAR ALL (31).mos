@@ -1,0 +1,9 @@
+!name Reset [31]
+for *
+	Reset
+	if focuslock
+		focuslock
+	endif
+next
+Track 1
+set input 127

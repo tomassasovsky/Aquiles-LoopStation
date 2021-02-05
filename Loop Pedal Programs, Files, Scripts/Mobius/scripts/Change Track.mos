@@ -1,0 +1,26 @@
+!name Next Track [50]
+Variable wasRecording
+
+if mode = record
+	Variable activeTrack trackNumber
+	for *
+		if trackNumber != activeTrack
+			Mute
+		endif
+		set input 0
+	next
+	set wasRecording true
+else if mode = overdub
+	Play
+	set input 0
+	set wasRecording true
+else
+	set wasRecording false
+endif
+
+NextTrack
+
+if wasRecording
+	set input 127
+	Overdub
+endif

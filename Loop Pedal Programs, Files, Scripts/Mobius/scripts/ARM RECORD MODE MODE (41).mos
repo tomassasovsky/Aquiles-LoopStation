@@ -1,0 +1,14 @@
+!name Record - Mode [41]
+message Play Mode
+
+for *
+	if mode = record
+		Play
+	elseif mode = overdub
+		Play
+	endif
+	if focuslock
+		focuslock
+	endif
+	set input 0
+next
