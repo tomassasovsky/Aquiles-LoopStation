@@ -1,19 +1,6 @@
 !name Record - Track 1 [35]
 !focuslock
 
-Variable activeTrack trackNumber
-
-if mode = record
-	Variable activeTrack trackNumber
-	for *
-		if trackNumber != activeTrack
-			Mute
-		endif
-		set input 0
-	next
-	message Overdubbing - Track $trackNumber
-endif
-
 Track1
 
 if mode == reset
@@ -29,14 +16,7 @@ if mode == reset
 
 else if mode = record
 	Variable activeTrack trackNumber
-	for *
-		if trackNumber != activeTrack
-			set input 0
-			Mute
-		endif
-	next
-	set input 127
-	Overdub
+	Play
 	for *
 		if trackNumber != activeTrack
 			Mute
@@ -46,10 +26,10 @@ else if mode = record
 
 else if mode = overdub
 	Play
-	set input 0
 	message Playing - Track 1
 
 else if mode = play
+	Variable activeTrack trackNumber
 	for *
 		if trackNumber != activeTrack
 			set input 0
@@ -60,6 +40,7 @@ else if mode = play
 	message Overdubbing - Track 1
 
 else if mode = mute
+	Variable activeTrack trackNumber
 	for *
 		if trackNumber != activeTrack
 			set input 0

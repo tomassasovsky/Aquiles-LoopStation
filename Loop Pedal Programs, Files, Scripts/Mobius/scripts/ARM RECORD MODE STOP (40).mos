@@ -6,7 +6,5 @@ if mode = overdub
 elseif mode = record
 	Play
 endif
-
-if !inMute
-	Mute
-endif
+	
+Mute

@@ -1,35 +1,33 @@
-##!focuslock
-message Start Point
-
-Variable trackStillPlaying
-Variable tracklocked
+!name Play - Rec/Play [49]
+Variable alreadyPlaying
+Variable trackLocked
 
 for *
-   if mode == play
-      set trackStillPlaying true
-   endif
+	if mode == play
+		set alreadyPlaying true
+	endif
 next
 
-if trackStillPlaying
+if alreadyPlaying
 	message Playing
 	for *
-			Play
+		Play
 	next
 else 
-	message Start Point
-		for *
-			if focuslock
-				set tracklocked true
-			endif
-		next
-	if tracklocked
-		for *
+	message Playing
+	for *
+		if focuslock
+			set trackLocked true
+		endif
+	next
+	if trackLocked		
+		for *			
 			if focuslock
 				Play
 			endif
 			Move LoopFrames 0
 		next
-	elseif !tracklocked
+	else
 		for *
 			Play
 			Move LoopFrames 0

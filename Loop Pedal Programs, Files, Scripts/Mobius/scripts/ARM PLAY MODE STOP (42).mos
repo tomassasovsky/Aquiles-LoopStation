@@ -3,5 +3,6 @@ MuteOn
 for *
 	if !inMute
 		MuteOn
+		MidiOut noteon 1 19 127
 	endif
 next

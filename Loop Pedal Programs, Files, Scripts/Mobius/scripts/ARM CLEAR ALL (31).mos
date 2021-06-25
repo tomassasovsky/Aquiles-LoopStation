@@ -6,4 +6,4 @@ for *
 	endif
 next
 Track 1
-set input 127
+MidiOut noteon 1 19 127
